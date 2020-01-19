@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private Button news;
     private Button game;
     private Button profile;
+    private Button data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,14 @@ public class MainActivity extends AppCompatActivity {
                 openActivityProfile();
             }
         });
+
+        data = findViewById(R.id.buttonData);
+        data.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openActivityData();
+            }
+        });
     }
     public void openActivityNews(){
         Intent intent = new Intent(this, NewsActivity.class);
@@ -52,6 +61,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void openActivityProfile(){
         Intent intent = new Intent(this, ProfileActivity.class);
+        startActivity(intent);
+    }
+    public void openActivityData(){
+        Intent intent = new Intent(this, DataActivity.class);
         startActivity(intent);
     }
 }
