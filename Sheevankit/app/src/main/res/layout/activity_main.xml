@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game"
+        android:layout_centerHorizontal="true"
+       />
+
+
+    <Button xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/walking_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/walk_text"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="262dp"
+        android:layout_marginLeft="262dp"
+        android:onClick="walkclick"
+        android:text="ADD" />
+
+    <Button
+        android:id="@+id/biking_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/walking_add"
+        android:layout_alignStart="@+id/walking_add"
+        android:layout_marginTop="10dp"
+        android:onClick="bikeclick"
+        android:text="ADD" />
+
+    <Button
+        android:id="@+id/car_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/biking_add"
+        android:layout_alignStart="@+id/walking_add"
+        android:layout_marginTop="10dp"
+        android:onClick="carclick"
+        android:text="ADD" />
+
+    <Button
+        android:id="@+id/bus_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/car_add"
+        android:layout_alignStart="@+id/walking_add"
+        android:layout_marginTop="10dp"
+        android:onClick="busclick"
+        android:text="ADD" />
+
+    <Button
+        android:id="@+id/plane_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bus_add"
+        android:layout_alignStart="@+id/walking_add"
+        android:layout_marginTop="11dp"
+        android:onClick="planeclick"
+        android:text="ADD" />
+
+    <Button
+        android:id="@+id/row_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plane_add"
+        android:layout_alignEnd="@+id/walking_add"
+        android:layout_marginTop="10dp"
+        android:onClick="rowingclick"
+        android:text="ADD" />
+
+    <EditText
+        android:id="@+id/walk_text"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="54dp"
+        android:hint=" Walking (km)"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/bike_text"
+        android:layout_width="187dp"
+        android:layout_below="@id/walk_text"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="115dp"
+        android:ems="10"
+        android:hint=" Biking (km)"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/car_text"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bike_text"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="172dp"
+        android:ems="10"
+        android:hint=" Car (km)"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/bus_text"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="231dp"
+        android:ems="10"
+        android:hint="Bus (km)"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/plane_text"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="289dp"
+        android:ems="10"
+        android:hint="Plane (km)"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/row_text"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="345dp"
+        android:ems="10"
+        android:hint="Rowing/Punting (km)"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/positivescore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="-1dp"
+        android:text="Positive Score" />
+
+
+    <TextView
+        android:id="@+id/negativescore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="66dp"
+        android:layout_toRightOf="@id/positivescore"
+        android:text="Negative Score" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-62dp"
+        android:layout_marginBottom="43dp"
+        android:layout_toStartOf="@+id/walk_text"
+        android:text="0" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="167dp"
+        android:layout_marginBottom="39dp"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/negativescore"
+        android:layout_toEndOf="@+id/plane_text"
+        android:text="Total Co2 Emmited (kg)" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-43dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginRight="74dp"
+        android:text="0" />
+
+
+</RelativeLayout>
